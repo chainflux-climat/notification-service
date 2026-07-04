@@ -1,0 +1,9 @@
+node_modules/
+.vscode/
+dist/
+*.log
+builds/
+cache/
+.DS_Store
+src/infrastructure/routes/routes.ts
+.scannerwork/

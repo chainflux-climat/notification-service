@@ -1,0 +1,189 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Test Email Sample</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+    <meta http–equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http–equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Poppins;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            padding-top: 70px;
+            padding-bottom: 60px;
+        }
+
+        .email-content {
+            color: #6e5d51;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+        }
+
+        .otp-body {
+            text-align: center;
+            color: #523e2f;
+            background-color: #f7eee9;
+            width: 100%;
+            padding: 20px 10px;
+        }
+
+        .otp-body-heading {
+            font-size: 28px;
+        }
+
+        .otp-body-msg {
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .p-b-20 {
+            padding-bottom: 20px;
+        }
+
+        .spacer {
+            font-size: 0px;
+            line-height: 0px;
+            height: 30px;
+        }
+
+        .break-line {
+            display: block;
+        }
+
+        hr {
+            border: 1px solid #f3eae4;
+        }
+
+        .footer-msg {
+            color: #9e9998;
+            font-size: 14px;
+        }
+
+        a {
+            color: #eb902d;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td valign="top" align="center">
+                    <table width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <!--Header section-->
+                        <tbody class="email-content">
+                            <tr>
+                                <td class="logo" valign="top">
+                                    <img class="em_img" alt="merry Christmas" style="
+                        display: block;
+                        font-family: Arial, sans-serif;
+                        font-size: 30px;
+                        line-height: 34px;
+                        color: #000000;
+                        max-width: 700px;
+                      " src="https://nse-dev.shinetrace.space/static/media/logo.eb6891e2.png" width="102" border="0"
+                                        height="45" />
+                                </td>
+                            </tr>
+                            <!-- Content/Email Body -->
+                            <tr>
+                                <td class="em_padd" valign="top" align="center">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                        <tbody>
+                                            <tr class="p-b-20">
+                                                <td>Hi,</td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30" class="spacer">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Action: {{action}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    UIN: {{uin}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Time: {{time}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Please click on the link below for verification.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30" class="spacer">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="otp-body">
+                                                    <table width="100%">
+                                                        <tr>
+                                                            <td> <a href={{link}} class="otp-body-msg">{{link}}</a></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="30" class="spacer">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Thank you,</td>
+                            </tr>
+                            <tr>
+                                <td height="30" class="spacer">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Shine</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!--footer -->
+            <tr>
+                <td style="padding: 100px 0 25px" valign="top" align="center">
+                    <table width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="padding-bottom: 16px" valign="top" align="center">
+                                    <hr />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="footer-msg">
+                                    Please do not reply to this message. If you have any
+                                    questions please contact <a href={{support}}>Shine Support</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
